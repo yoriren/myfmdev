@@ -1,0 +1,77 @@
+/* Product Table Styles */
+.product-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1.5rem 0;
+    transition: all 0.3s ease;
+}
+
+    .product-table th,
+    .product-table td {
+        padding: 1rem;
+        text-align: left;
+        border: 1px solid var(--border-color);
+    }
+
+.table-header {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+    .table-header th {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+    }
+
+.product-row {
+    transition: all 0.2s ease;
+}
+
+    .product-row:hover {
+        background-color: var(--bg-secondary);
+        transform: scale(1.01);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+.product-name {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.product-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.price-column {
+    text-align: right;
+}
+
+.product-price {
+    font-weight: bold;
+    color: var(--success-color);
+    text-align: right;
+}
+
+/* Zebra striping for rows */
+.product-table tbody tr:nth-child(odd) {
+    background-color: var(--bg-secondary);
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+    .product-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+        .product-table th,
+        .product-table td {
+            padding: 0.75rem;
+        }
+}

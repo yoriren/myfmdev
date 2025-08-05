@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "uKjU9ArjZZhOMjY6qB52nYyOztNMAWWH+S5WK8z/qJk=",
+  "Source": "myfm-dev-api",
+  "BasePath": "_content/myfm-dev-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
